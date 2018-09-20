@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="../">
+    <meta charset="utf-8">
+    <title>SmartSite</title>
+    <meta name="description" content="SmartSite."/>
+
+    <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="pkg/flatui/dist/css/vendor/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="pkg/flatui/dist/css/flat-ui.css" rel="stylesheet">
+    <link href="pkg/flatui/docs/assets/css/demo.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="dist/js/vendor/html5shiv.js"></script>
+      <script src="dist/js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="row" id="header">
+
+    </div> <!-- /row -->
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
+      </div>
+
+
+      <div class="row demo-tiles">
+        <div class="col">
+          <h3>Detect colors from image or video</h3>
+          <p>This demo detects colors from an image or a video. The back-end application takes in the URL of the image or video from the form below and streams the output back to this page. Please input an URL first and then submit the input for back-end processing. </p>
+
+          <div class="form-group">
+            <h6>Meida URL:</h6>
+            <input type="text" value="" placeholder="Please input media url" class="form-control">
+
+            <h6>Media Type:</h6>
+            <label class="radio">
+              <input type="radio" name="media" id="mediaVideo" value="video" data-toggle="radio" checked="" class="custom-radio"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
+              Video
+            </label>
+            <label class="radio">
+              <input type="radio" name="media" id="mediaImage" value="image" data-toggle="radio" class="custom-radio"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
+              Image
+            </label>
+
+            <h6>Submit for analysis</h6>
+            <a href="#fakelink" class="btn btn-block btn-lg btn-primary">Detect colors from the media</a>
+          </div>
+        </div>
+      </div> <!-- /tiles -->
+
+
+    </div> <!-- /container -->
+
+    <footer>
+      <div class="container" id="footer">
+
+      </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Bootstrap 4 requires Popper.js -->
+    <script src="https://unpkg.com/popper.js@1.14.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
+    <script src="pkg/flatui/dist/scripts/flat-ui.js"></script>
+    <script src="pkg/flatui/docs/assets/js/application.js"></script>
+    <script >
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+    </script>
+  </body>
+</html>
